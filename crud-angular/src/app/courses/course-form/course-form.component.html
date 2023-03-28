@@ -1,0 +1,41 @@
+<mat-card>
+  <mat-card-content>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <form [formGroup]="form" class="needs-validation" novalidate>
+
+            <mat-toolbar color="primary">Cursos Disponiveis</mat-toolbar>
+
+            <div class="form-group">
+              <label for="name">Curso</label>
+              <input type="text" class="form-control" id="name" formControlName="name" required>
+            </div>
+
+
+            <div class="form-group">
+              <label for="category">Categoria</label>
+              <select class="form-control" id="category" formControlName="category">
+                <option value="Front-end">Front-end</option>
+                <option value="Back-end">Back-end</option>
+                <option value="Fullstack">Fullstack</option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="button text-center mt-4">
+      <button (click)="onSubmit()" type="submit" class="btn btn-primary btn-lg"
+        style="margin-right: 10px;">Salvar</button>
+      <button (click)="onCancel()" type="submit" class="btn btn-secondary btn-lg">Cancelar</button>
+    </div>
+
+
+
+  </mat-card-content>
+
+
+</mat-card>

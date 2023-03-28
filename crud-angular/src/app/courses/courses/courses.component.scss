@@ -1,0 +1,54 @@
+table{
+
+  width: 50%;
+
+
+}
+
+.spinner{
+
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.category-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.category-wrapper span {
+  margin-right: 10px;
+}
+
+mat-card {
+  width: 600px;
+  height:auto;
+
+}
+
+mat-toolbar {
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.toolbar-title {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.toolbar-button {
+  margin-left: auto;
+}
+
+
+
+
+
+
+
